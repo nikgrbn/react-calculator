@@ -43,6 +43,7 @@ body {
     grid-column: span 2;
 }
 
+
 .output {
     border: 1px solid #ffffff88;
     grid-column: 1 / -1;
@@ -51,19 +52,21 @@ body {
     flex-direction: column;
     align-items: flex-end;
     justify-content: space-around;
-    padding: 1rem;
-    word-wrap: break-word;
-    word-break: break-all;
+    padding-right: 1rem;
+    overflow: hidden; /* Ensure content does not overflow the container */
 }
 
 .output .previous-operand {
+    padding-top: 0.75rem;
     font-family: "Iceberg", sans-serif;
     color: rgb(255, 255, 255, 0.8);
     font-size: 1.5rem;
+    height: 2rem; /* Set a fixed height */
 }
 
 .output .current-operand {
     font-family: "Iceberg", sans-serif;
     color: rgb(255, 255, 255);
     font-size: 3rem;
+    height: 3.5rem; /* Set a fixed height */
 }
